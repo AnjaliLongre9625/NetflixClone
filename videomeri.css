@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(13, 12, 12);
+    width: 100%;
+    height: 2000px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.anime{
+    width:1002px;
+    height: 407px;
+    margin-top: 100px;
+    margin-left: 100px;
+    animation: slider 7s infinite;
+    background-image: url(https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5418670/cover/1920x770d19e352a2ff54b3dbda9842e0a838bab.jpg);
+  }
+  
+  @keyframes slider{
+    0%{
+        background-image: url(https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5437988/cover/1920x7707ab884a4cfe542a0a7f5332839ffe2a6.jpg);
+
+    }
+    25%{
+        background-image: url(https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5359029/cover/1920x7708f27942c29404dd69b90f2611792980b.jpg);
+    }
+    50%{
+       background-image: url(https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-101-10z5399210/cover/1920x77080caf0097e384610966c2cf90063bb22.jpg);
+    }
+    75%{
+        background-image: url(https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-0-1z5444841/cover/1920x770a3a9b6b6cf6f4bfc90f2514712972657.jpg);
+    }
+  }
+
+
+  .moon1{
+    position: bottom;
+    margin-left: 60px;
+  }
+
+.moon1 img{
+    width: 100px;
+    animation: gola 2s alternate infinite  ease-in-out;
+    position: relative;
+}
+@keyframes gola{
+  0%{
+      transform: translateY(15vh);
+      opacity: 1;  }
+  
+  25%{
+      opacity: 0.5;}
+
+  75%{
+     opacity: 0.5;}
+
+  100%{
+      transform: translateY(80vh);
+      opacity: 1;}}
+
+.moon2{
+  position: bottom;
+  margin-right: 200px;
+}
+
+.moon2 img{
+  width: 100px;
+  animation: gola1 2s alternate infinite  ease-in-out ;
+  position: relative;
+}
+
+@keyframes gola1{
+  0%{
+      transform: translateY(80vh);
+      opacity: 1;
+
+  }
+  25%{
+      opacity: 0.5;
+      
+  }
+  75%{
+     opacity: 0.5;
+  }
+  100%{
+      transform: translateY(15vh);
+    opacity: 1;
+  }
+}
+
+
+.brand-logo {
+  height: 70px;
+}
+
+.movie-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+
+.movie-des {
+  width: 80%;
+  line-height: 30px;
+  padding-left: 50px;
+  margin-top: 30px;
+  opacity: 0.8;
+}
+
+.title {
+  padding-left: 45;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-left: 31px;
+  margin-bottom: 20px;
+  
+    text-shadow: 14px 12px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom,white,
+    rgb(224, 172, 172));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+  margin-bottom: 7px;
+}
+
+.card-container {
+  position: relative;
+  width: 92;
+  padding-left: 10px;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: auto;
+  overflow-x: visible;
+  overflow-y: smooth;
+}
+
+
+
+.card {
+  
+  position: relative;
+  min-width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 50px;
+  transition: 0.5s;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.4);
+}
+
+.card:hover .card-body {
+  opacity: 9;
+}
+
+.card-body {
+
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(1, 7, 0, 0),rgb(250, 249, 249));
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.name1 {
+  text-align: center;
+  color:rgb(235, 53, 12);
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 60%;
+  text-shadow: 2px 0px 3px rgb(221, 221, 240);
+}
+.watchlist-btn {
+  position: relative;
+  width: 100%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  color:rgb(103, 0, 0);
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+.watchlist-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+  color: white;
+  background: rgb(159, 4, 4);
+}
+.watchlist-btn a{
+  color: white;
+  text-decoration: none;
+}
+

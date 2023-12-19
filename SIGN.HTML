@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    body {
+    border-color: white;
+    border:2px;
+    background:url(https://imgs.search.brave.com/eV_DUUiffhiDupQ_sq4soolDBaUrxFiUx2RiUxCWvpI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvbW92aWUtOXB2/bWR0dno0Y2IweGwz/Ny5qcGc) ;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    
+}
+h1{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    text-align: center;
+    padding: 3rem;
+    max-width: 300px;
+    width: 100%;
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    outline: none;
+    border: none;
+    width: 324px;
+    padding: 10px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(240, 152, 152);
+}
+
+.remember-me {
+    margin-top: 20px;
+    margin-right: 215px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.remember{
+    padding: 10px;
+    margin-top: 1px;
+    display: flex;
+}
+
+.error-message {
+    color: #e50914;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 12px;
+}
+ .logo img{
+    width: 193px;
+    height: 33px;}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Netflix Logo">
+        </div>
+        <form id="login-form">
+            <h1>Sign In</h1>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" >Sign In</button>
+
+           <nobr>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" checked>
+                <label for="remember"><nobr> Remember me</nobr></label>
+            </div>
+
+            <a href="https://www.netflix.com/in/LoginHelp">Need help?</a>
+            <p class="error-message" id="error-message"></p></nobr>
+        </form>
+    </div>
+
+    <script >
+
+    const loginForm = document.getElementById('login-form');
+    const errorMessage = document.getElementById('error-message');
+
+   loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (email === 'anjalilongre349@gmail.com' && password === '962590') {
+        alert('Sign in successfully');
+        window.location.href = "videoSmain.html";
+    } else {
+        errorMessage.textContent = 'Incorrect email or password. Please try again.';
+    }
+});
+
+    </script>
+</body>
+</html>
