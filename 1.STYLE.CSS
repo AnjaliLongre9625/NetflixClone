@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+.navbar_netflix{
+    margin-left: 84px;
+    margin-top: 0px;
+    width: 159px;
+    height: 100%;
+}
+.navbar_nav_items{
+    display: flex;
+    gap: 10px;}
+
+.netflix_logo{
+    width: 100%;
+    height: 100%;}
+
+.language_drop_down{
+    background:transparent;
+    border: none;
+    color: white;}
+
+.dropdown_container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);}
+
+.signin_button{
+    color:white;
+    border: red;
+    background-color: red;
+    padding: 2px;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+    text-decoration: none;}
+
+.hero_bg_image_container{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero_bg_image_container img{
+ height: 700px;
+}
+.hero_bg_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}
+
+.hero_bg_overlay{
+    position: absolute;
+    inset: 0.9px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);}
+
+.hero_card{
+    position: absolute;
+    top: 40%;
+    margin-right: 20%;
+    margin-left: 12%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero_title{
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 4px 5px;
+    margin-top: 3px;
+}
+.hero_subtitle{
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 14px 5px;
+    margin-top: 3px;
+}
+.hero_description{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.email{
+    gap: 0px;
+    border: none;
+    outline: none;
+    width: 430px;
+    height: 60px;
+    color: black;
+    padding: 0.40rem 0.80rem;
+    border-radius: 3px;
+    border-color: white;
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.getstarted{
+    font-size:19px;
+    width: 169px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: red;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.getstarted a{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 50px;
+    color: #999;
+    font-size: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+  
+.footer a{
+    color: gray;
+    font-size: 0.9rem;
+}
+.footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 50px;
+    font-size: 16px;
+}
+.footer .footer-cols{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 1.8rem;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 60px;
+
+}
+.footer li{
+    margin: 8px;
+    line-height: 2;
+}
+ul,li{
+    list-style: none;
+}
+
+.card-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 140px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.card-3 h1{
+   font-size: 50px;
+   letter-spacing: 2px;
+   padding-top: 50px;
+   padding-bottom: 20px;
+   color: #fff;
+}
+.card-3 p{
+   font-size: 20px;
+   letter-spacing: 2px;
+   padding-bottom: 10px;
+   color: #fff;
+}
+.card-3 .img{
+   width: 45%;
+}
+
+.ques h1{
+   text-align: center;
+   font-size: 50px;
+}
+
+.ques details{
+   background-color: rgb(73, 68, 68);
+   margin: 50px;
+   width: 70%;
+   margin-left: 15%;
+   font-size: 30px;
+}
+.ques summary:hover{
+   background-color: rgb(109, 102, 102);
+   
+}
+
+.ques summary{
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 50px;
+}
+.ques p{
+   margin: 50px;
+   padding-bottom: 30px;
+}
+
+.watchlist-btn {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    color:rgb(103, 0, 0);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 5px;
+  }
+  .watchlist-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    transform: scale(0.4);
+  }
+  
+  .watchlist-btn:hover {
+    color: white;
+    background: rgb(103, 0, 0);
+  }
